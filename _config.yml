@@ -59,6 +59,7 @@ speakers:
 # Call to action section
 call:
   show: true
+  title: "CALL"
   heading: "Está pronto para participar? Escolha como!"
   speak_text: "QUERO PALESTRAR"
   speak_url: "#"
@@ -68,6 +69,7 @@ call:
 # Agenda section
 agenda:
   show: true
+  title: "AGENDA"
   heading: "AGENDA"
   subheading: "Esse é o nosso planejamento. Mudanças na agenda poderão ser realizadas sem aviso prévio."
   read_more: "Veja mais"
@@ -76,8 +78,14 @@ agenda:
 venue:
   show: true
   title: "LOCAL"
+  heading: "LOCAL"
+  name: "Local"
+  address: "Recife, Pernambuco - Brasil"
+  info: "Here you can find some additional info about the venue."
 
 # Team section
 team:
   show: true
   title: "TIME"
+  heading: "ORGANIZING COMITEE"
+  subheading: "And also thanks to all our volunteers"

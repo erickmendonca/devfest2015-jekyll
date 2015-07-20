@@ -86,19 +86,20 @@
 		<script type="text/javascript" src="js/rev-slider.js"></script>
 
 
+		{% if site.venue.show %}
 		<!-- Google Map -->
 	    <script type="text/javascript">
 
 	        $('#google-map').gMap({
 
-	            address: 'Yerevan, Armenia',
+	            address: '{{ site.venue.address }}',
 	            maptype: 'ROADMAP',
 	            zoom: 14,
 	            markers: [
 
 	                {
-	                    address: "Yerevan, Armenia",
-	                    html: '<div style="width: 300px;"><h4 style="margin-bottom: 8px;">THE VENUE <span>NAME</span></h4><p class="nobottommargin">Here you can find out some info about the venue</p></div>',
+	                    address: "{{ site.venue.address }}",
+	                    html: '<div style="width: 300px;"><h4 style="margin-bottom: 8px;">{{ site.venue.heading }} <span>{{ site.venue.name }}</span></h4><p class="nobottommargin">{{ site.venue.info }}</p></div>',
 	                    icon: {
 	                        image: "upload/map-pin.png",
 	                        iconsize: [40, 47],
@@ -119,6 +120,7 @@
 	        });
 
 	    </script> <!-- end google map -->
+	    {% endif %}
 
 	</body>
 </html>

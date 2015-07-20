@@ -1,0 +1,27 @@
+- 
+  id: 1
+  name: "Joeby Ragpa"
+  title: "Organizer"
+  picture: "upload/team_1.png"
+  github: "#"
+  googleplus: "#"
+  twitter: "#"
+  facebook: "#"
+- 
+  id: 2
+  name: "Mat Trump"
+  title: "Lead Designer"
+  picture: "upload/team_1.png"
+  github: "#"
+  googleplus: "#"
+  twitter: "#"
+  facebook: "#"
+- 
+  id: 3
+  name: "Clint Marshal"
+  title: "Organizer"
+  picture: "upload/team_1.png"
+  github: "#"
+  googleplus: "#"
+  twitter: "#"
+  facebook: "#"
