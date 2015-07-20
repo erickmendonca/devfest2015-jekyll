@@ -1,0 +1,31 @@
+<!-- Our Team -->
+<section class="section-wrap pb-0 our-team bg-light" id="team">
+	<div class="container">
+		<h2 class="text-center">{{ site.team.heading }}</h2>
+		<p class="subheading text-center">{{ site.team.subheading }}</p>
+
+		<div class="row mt-30">
+
+		{% for organizer in site.data.team %}
+			<div class="col-md-4 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
+				<div class="team-member">
+					<div class="team-img">
+						<img src="{{ organizer.picture }}" alt="">
+						<div class="team-details text-center">
+							<h5 class="team-title mb-10">{{ organizer.name }}</h5>
+							<span>{{ organizer.title }}</span>
+							<div class="socials mt-20">
+								<a href="{{ organizer.facebook }}"><i class="fa fa-facebook"></i></a>
+								<a href="{{ organizer.twitter }}"><i class="fa fa-twitter"></i></a>
+								<a href="{{ organizer.googleplus }}"><i class="fa fa-google-plus"></i></a>
+								<a href="{{ organizer.github }}"><i class="fa fa-github"></i></a>
+							</div>
+						</div>
+					</div>							
+				</div> <!-- end team member -->
+			</div> <!-- end col -->
+		{% endfor %}
+
+		</div> <!-- end row -->
+	</div> <!-- end container -->
+</section> <!-- end our team -->

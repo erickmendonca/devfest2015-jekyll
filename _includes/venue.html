@@ -1,0 +1,11 @@
+{% if site.venue.show %}
+<section class="section-wrap pb-0 our-team bg-light" id="venue">
+	<div class="container">
+	<h2 class="text-center">{{ site.venue.heading }}</h2>
+		<p class="subheading text-center">{{ site.venue.address }}</p>
+	</div>
+</section>
+	
+<!-- Google Map -->
+<section id="google-map" class="gmap"></section>
+{% endif %}
