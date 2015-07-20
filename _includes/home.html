@@ -1,33 +1,36 @@
+{% if site.home.show %}
 <header id="home">
-			<div class="main-nav" role="navigation">
+	<div class="main-nav" role="navigation">
 
-				<nav class="nav-hide">
-					<ul class="nav local-scroll">
-					    <li class="active"><a href="#home">TOP</a></li>
-					    <li><a href="#intro">INTRO</a></li>
-					    <li><a href="#speakers">SPEAKERS</a></li>
-						<li><a href="#register">REGISTER</a></li>
-						<li><a href="#agenda">AGENDA</a></li>
-					    <li><a href="#venue">VENUE</a></li>
-					</ul>
-				</nav>
+		<nav class="nav-hide">
+			<ul class="nav local-scroll">
+			    <li class="active"><a href="#home">{{ site.home.title }}</a></li>
+			    <li><a href="#intro">{{ site.intro.title }}</a></li>
+			    <li><a href="#speakers">{{ site.speakers.title }}</a></li>
+				<li><a href="#register">{{ site.register.title }}</a></li>
+				<li><a href="#agenda">{{ site.agenda.title }}</a></li>
+			    <li><a href="#venue">{{ site.venue.title }}</a></li>
+			    <li><a href="#team">{{ site.team.title }}</a></li>
+			</ul>
+		</nav>
 
-				<div class="container clearfix">
+		<div class="container clearfix">
 
-					<div class="logo-light local-scroll">
-						<a href="#home" class="logo">
-							<img src="upload/logo-light.png" alt="logo">
-						</a>
-					</div>
+			<div class="logo-light local-scroll">
+				<a href="#home" class="logo">
+					<img src="upload/logo-light.png" alt="logo">
+				</a>
+			</div>
 
-					<div class="navbar-toggle">
-						<div class="bar1"></div>
-						<div class="bar2"></div>
-						<div class="bar3"></div>
-					</div>
+			<div class="navbar-toggle">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
 
-				</div> <!-- end container -->
-			</div> <!-- end main nav -->
-		</header>
+		</div> <!-- end container -->
+	</div> <!-- end main nav -->
+</header>
 
-		<div class="main-wrapper-onepage main oh">
+<div class="main-wrapper-onepage main oh">
+{% endif %}

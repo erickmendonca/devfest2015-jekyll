@@ -1,0 +1,34 @@
+{% if site.speakers.show %}
+<!-- Speakers -->
+<section class="section-wrap testimonials-slider" id="speakers">
+	<div class="container">
+		<h2 class="color-white text-center">{{ site.speakers.heading }}</h2>
+		<p class="subheading color-white text-center">{{ site.speakers.subheading }}</p>
+
+		<div class="row">
+			<div id="owl-testimonials" class="owl-carousel owl-theme mt-40">
+
+				{% for speaker in site.data.speakers %}
+				<div class="item">
+					<div class="testimonials-box">
+						<img src="{{ speaker.picture }}" class="testimonials-img" alt="">
+						<div class="testimonial-details">
+							<p>{{ speaker.presentation }}</p>
+							<h5 class="testimonial-name">{{ speaker.name }}</h5>
+							<span>{{ speaker.company }}</span>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+
+			</div> <!-- end owl carousel-->
+
+			<div class="customNavigation text-center mt-50">
+				<a class="btn prev"><i class="arrow_carrot-left"></i></a>
+				<a class="btn next"><i class="arrow_carrot-right"></i></a>
+			</div>
+
+		</div> <!-- end row -->					
+	</div> <!-- end container -->
+</section> <!-- end testimonials -->
+{% endif %}

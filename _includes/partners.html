@@ -1,50 +1,22 @@
+{% if site.partners.show %}
 <!-- Partners -->
-			<section class="section-wrap bg-light partners-light">
-				<div class="container">
-					<div class="row">
-						<h2 class="text-center">ORGANIZERS & SPONSORS</h2>
-						<div id="owl-partners" class="owl-carousel owl-theme">
+<section class="section-wrap bg-light partners-light">
+	<div class="container">
+		<div class="row">
+			<h2 class="text-center">{{ site.partners.heading }}</h2>
+			<div id="owl-partners" class="owl-carousel owl-theme">
 
-							<div class="item">
-								<a href="#">
-									<img src="upload/google.svg" alt="">
-								</a>
-							</div> 
+				{% for partner in site.data.partners %}
+				<div class="item">
+					<a href="{{ partner.url }}">
+						<img src="{{ partner.picture }}" alt="{{ partner.name }}">
+					</a>
+				</div>
+				{% endfor %}
 
-							
-							<div class="item">
-								<a href="#">
-									<img src="upload/gdg-x.svg" alt="">
-								</a>
-							</div> 
-
-
-							<div class="item">
-								<a href="#">
-									<img src="upload/gdg-x.svg" alt="">
-								</a>
-							</div> 
-
-							<div class="item">
-								<a href="#">
-									<img src="upload/google.svg" alt="">
-								</a>
-							</div> 
-
-							<div class="item">
-								<a href="#">
-									<img src="upload/gdg-x.svg" alt="">
-								</a>
-							</div> <!-- end second logo -->
-
-							<div class="item">
-								<a href="#">
-									<img src="upload/gdg-armenia.svg" alt="">
-								</a>
-							</div> <!-- end third logo -->
-
-						</div> <!-- end carousel -->
-						
-					</div> <!-- end row -->
-				</div> <!-- end container -->
-			</section> <!-- end partners -->
+			</div> <!-- end carousel -->
+			
+		</div> <!-- end row -->
+	</div> <!-- end container -->
+</section> <!-- end partners -->
+{% endif %}

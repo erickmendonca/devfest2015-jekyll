@@ -1,20 +1,22 @@
-		<!-- Intro -->
-			<section class="section-wrap" id="intro">
-				<div class="container">
-				<div class="row">
+{% if site.intro.show %}
+<!-- Intro -->
+<section class="section-wrap" id="intro">
+	<div class="container">
+	<div class="row">
 
-						<div class="col-sm-8 col-sm-offset-2 text-center wow slideInUp" data-wow-duration="1.2s" data-wow-delay="0s">
-							<h2 class="intro-heading">
-							<strong>WHAT IS A GDG DEVFEST?</strong>
-							</h2>
-							<p class="intro-text">
-								GDG DevFests are large, community-run events that can offer speaker sessions across multiple product areas, all-day hack-a-thons, code labs, and more. In 2014, the official DevFest Season runs from September 15th through November 30th.
-							</p>
-						</div> <!-- end col -->
+			<div class="col-sm-8 col-sm-offset-2 text-center wow slideInUp" data-wow-duration="1.2s" data-wow-delay="0s">
+				<h2 class="intro-heading">
+				<strong>{{ site.intro.heading }}</strong>
+				</h2>
+				<p class="intro-text">
+					{{ site.intro.text }}
+				</p>
+			</div> <!-- end col -->
 
-					</div> <!-- end row -->
-					
-							
-					
-				</div> <!-- end container -->
-			</section> <!-- end intro -->
+		</div> <!-- end row -->
+		
+				
+		
+	</div> <!-- end container -->
+</section> <!-- end intro -->
+{% endif %}

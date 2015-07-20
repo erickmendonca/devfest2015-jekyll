@@ -1,0 +1,27 @@
+- 
+  id: 1 # Day or group of presentations
+  heading: "Dia 1: Conferência"
+  url: "single.html"
+  picture: "upload/blog_1.jpg"
+  text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi."
+  presentations: 
+    - # Presentations
+      id: 1
+      speaker_id: 1
+      time: "10:00"
+    - 
+      id: 2
+      speaker_id: 2
+      time: "11:00"
+- 
+  id: 2 # Day or group of presentations
+  heading: "Dia 2: Workshops"
+  url: "single.html"
+  picture: "upload/blog_1.jpg"
+  text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi."
+- 
+  id: 3 # Day or group of presentations
+  heading: "Dia 3: Hackathon"
+  url: "single.html"
+  picture: "upload/blog_1.jpg"
+  text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi."

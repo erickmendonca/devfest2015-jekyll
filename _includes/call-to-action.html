@@ -1,10 +1,12 @@
-			<!-- Call to Action -->
-			<section class="call-to-action" id="register">
-				<div class="container">			
-					<h2 class="text-center color-white">Are you ready to join? Choose your way!</h2>
-					<div class="text-center mt-40">
-						<a href="#" class="btn btn-large btn-light-solid">I WANNA BE A SPEAKER</a> <a href="#" class="btn btn-large btn-light-solid">I WANNA JUST PARTICIPATE</a>
-					</div>
-				</div> <!-- end container -->
-			</section> <!-- end call to action -->
-		
+{% if site.call.show %}
+<!-- Call to Action -->
+<section class="call-to-action" id="register">
+	<div class="container">			
+		<h2 class="text-center color-white">{{ site.call.heading }}</h2>
+		<div class="text-center mt-40">
+			<a href="{{ site.call.speak_url }}" class="btn btn-large btn-light-solid">{{ site.call.speak_text }}</a>
+			<a href="{{ site.call.attend_url }}" class="btn btn-large btn-light-solid">{{ site.call.attend_text }}</a>
+		</div>
+	</div> <!-- end container -->
+</section> <!-- end call to action -->
+{% endif %}

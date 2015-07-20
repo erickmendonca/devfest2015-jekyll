@@ -1,0 +1,15 @@
+- 
+  id: 1
+  name: "Google"
+  url: "http://google.com/"
+  picture: "upload/google.svg"
+-
+  id: 2
+  name: "GDG-X"
+  url: "http://github.com/gdg-x"
+  picture: "upload/gdg-x.svg"
+- 
+  id: 3
+  name: "GDG Armenia"
+  url: "#"
+  picture: "upload/gdg-armenia.svg"
